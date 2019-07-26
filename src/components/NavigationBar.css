@@ -1,0 +1,26 @@
+
+/* This CSS isn't ideal, but it works for now */
+.navbar {
+  background-color: #222;
+}
+
+a, .navbar-brand, .nav-link .navbar__link {
+  color: #bbb;
+}
+.navbar-nav .nav-link.navbar__link {
+  color: #bbb;
+}
+.navbar-nav .nav-link.navbar__link:hover {
+  color: white;
+}
+.navbar-nav .nav-link.navbar__link.active {
+  color: #bbb;
+}
+.navbar-nav .nav-link.navbar__link.active:hover {
+  color: white;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
