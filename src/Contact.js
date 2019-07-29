@@ -1,7 +1,7 @@
 import React from 'react'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
-import { config } from "./Config";
+import { Config } from "./Config";
 
 export default function Contact() {
   const subjectLineRef = React.createRef();
@@ -22,7 +22,7 @@ export default function Contact() {
   } 
 
   const sendEmail = (subject, email, message) => {
-    fetch(`https://formcarry.com/s/${config.EMAIL_KEY}`, {
+    fetch(`https://formcarry.com/s/${Config.EMAIL_KEY}`, {
       method: 'POST',
       headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
       body: JSON.stringify({email: `${email || "Anonymous"}`, subject: `${subject}`, message: `${message}`,})
