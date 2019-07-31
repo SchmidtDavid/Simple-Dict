@@ -5,7 +5,7 @@ export const Jumbotron = () => (
   <Jumbo fluid >
     <Container>
       <h1>Simple Dictionary</h1>
-      <p>Find out what that word <em>really </em>means</p>
+      <p>Find out what that word means</p>
     </Container>
   </Jumbo>
 )

@@ -4,6 +4,7 @@ import Tab from 'react-bootstrap/Tab';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { API } from './RapidApiFetch';
 import { _Headers } from '../Config';
+import './Definitions.css';
 
 export function Definitions(props) {
   const [definitions, setDefinitions] = useState({
@@ -30,7 +31,7 @@ export function Definitions(props) {
     <React.Fragment>
       {definitions.definition ? (
         <Tabs defaultActiveKey="def" id="word-info">
-          <Tab eventKey="def" title="Definition">
+          <Tab className="tab__link" eventKey="def" title="Definition">
           <ListGroup>
             {/* definitions.definition.meaning && definitions.definition.meaning.map(meaning => {
               console.log(meaning);
@@ -38,13 +39,13 @@ export function Definitions(props) {
             })*/}
           </ListGroup>
           </Tab>
-          <Tab eventKey="urban" title="Urban Dictionary">
+          <Tab className="tab__link" eventKey="urban" title="Urban Dictionary">
             {/* definitions.urban.list && definitions.urban.list.map(def => {
               console.log(def);
               return <li key={def}>{def}</li>;
             })*/}
           </Tab>
-          <Tab eventKey="example" title="Example Sentences">
+          <Tab className="tab__link" eventKey="example" title="Example Sentences">
             {/*definitions.examples.example && definitions.examples.example.map(ex => {
               console.log(ex)
             return <li key={ex}>{ex}</li>})*/}

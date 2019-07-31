@@ -12,6 +12,9 @@ export function SearchBar(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
     const searchTerm = inRef.current.value;
+    if (!searchTerm) {
+      return;
+    }
     callBack(searchTerm); // From SearchWidget, to pass search term and conditionally render Definitions.js
   }
   return (
