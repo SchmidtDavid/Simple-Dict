@@ -1,4 +1,4 @@
-//import React from 'react'
+// TODO deprecated, remove eventually
 import { _Config } from "../Config";
 
 //Fetches Definition, Urban Dictionary Def, and Example sentences

@@ -3,17 +3,16 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import DataFetch from './DataFetch';
 
-export function SearchBar() {
+export function SearchBar(props) {
 
   const inRef = React.createRef(); // refs are apparently the standard way to do this
+  const callBack = props.callBack;
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const searchTerm = inRef.current.value;
-    console.log(searchTerm);
-    DataFetch(searchTerm);
+    callBack(searchTerm); // From SearchWidget, to pass search term and conditionally render Definitions.js
   }
   return (
       <Form
@@ -21,8 +20,8 @@ export function SearchBar() {
       >
         <InputGroup className="mb-3">
           <FormControl
-            placeholder="Name"
-            aria-label="Show name"
+            placeholder="Word"
+            aria-label="Word"
             aria-describedby="basic-addon2"
             ref={inRef}
           />
