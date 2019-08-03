@@ -10,7 +10,7 @@ export const NavigationBar = () => (
     <Layout>
       <Navbar.Brand className="navbar__link">
         <Link to="/">
-          Home
+          Simple Dictionary
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav"/>
