@@ -1,5 +1,21 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Overview
+
+This app is a dictionary that uses free public APIs to generate definitions and examples of words searched by the user.
+API headers and keys are currently contained in a config.js file which I've not made available publicly. 
+In the future, those things should be contained in some backend solution, as keys and API calls on the front end are generally bad form.
+As this project was for learning purposes, I did so anyways. 
+
+If you'd really like to run this app, you'd need to sign up for your own (free) keys at:
+https://rapidapi.com/community/api/urban-dictionary
+https://rapidapi.com/twinword/api/word-dictionary 
+https://formcarry.com (to send emails)
+
+OR 
+
+Modify Definitions.js and Contact.js to compile correctly without those API calls
+
 ## Available Scripts
 
 In the project directory, you can run:

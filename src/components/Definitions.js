@@ -15,6 +15,7 @@ export function Definitions(props) {
   const [isLoaded, setIsLoaded] = useState(false);
   
   //Asynchronously gets word information and updates the state. 
+  //This is technically unsafe, should eventually use some backend to handle the APIs. 
   useEffect( () => {
     (async () => {
       let definition = await API("https://twinword-word-graph-dictionary.p.rapidapi.com/definition/?entry=", props.word, _Headers.def_header);
